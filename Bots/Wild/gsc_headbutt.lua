@@ -1,6 +1,7 @@
 --Edit parameters in this section
 local any_species = false -- check for all species or not
 local desired_species = {102,163} -- the desired pokemon dex numbers
+--local desired_species = {204,214} -- 
 --End of parameters
 
 local atkdef
@@ -53,6 +54,22 @@ function shiny(atkdef,spespc)
     end
     return false
 end
+--function shiny(atkdef,spespc) --function colorhighestDV(ATKDEF, SPESPC) --function altcolorflawless
+--    if spespc == 0xAA then     -- Alt. Color Flawless: SPESPC = 0xAA & ATKDEF = 0xFA
+--        if atkdef == 0xFA then -- Alt. Color Flawless: SPESPC = 0xAA & ATKDEF = 0xFA
+--            return true
+--        end
+--    end
+--    return false
+--end
+--function shiny(atkdef,spespc) --function maxDV(ATKDEF, SPESPC) --function flawless
+--    if spespc == 0xFF then     -- Flawless: SPESPC = 0xFF & ATKDEF = 0xFF
+--        if atkdef == 0xFF then -- Flawless: SPESPC = 0xFF & ATKDEF = 0xFF
+--            return true
+--        end
+--    end
+--    return false
+--end
 
 local state = savestate.create()
 while true do

@@ -1,5 +1,7 @@
 --Edit parameters in this section
 local desired_species = -1 -- the desired pokemon dex number / -1 for all species/encounter slots
+--local desired_species = 130 -- Gyarados
+--local desired_species = 148 -- Dragonair
 --End of parameters
 
 local atkdef
@@ -52,6 +54,39 @@ function shiny(atkdef,spespc)
     end
     return false
 end
+--function shiny(atkdef,spespc) --function colorhighestDV(ATKDEF, SPESPC) --function altcolorflawless
+--    if spespc == 0xAA then     -- Alt. Color Flawless: SPESPC = 0xAA & ATKDEF = 0xFA
+--        if atkdef == 0xFA then -- Alt. Color Flawless: SPESPC = 0xAA & ATKDEF = 0xFA
+--            return true
+--        end
+--    end
+--    return false
+--end
+--function shiny(atkdef,spespc) --function maxDV(ATKDEF, SPESPC) --function flawless
+--    if spespc == 0xFF then     -- Flawless: SPESPC = 0xFF & ATKDEF = 0xFF
+--        if atkdef == 0xFF then -- Flawless: SPESPC = 0xFF & ATKDEF = 0xFF
+--            return true
+--        end
+--    end
+--    return false
+--end
+--function shiny(atkdef,spespc)
+--    if spespc == 0xFF then
+--        if atkdef == 0xCF then
+--            return true
+--        end
+--    end
+--    return false
+--end -- Ground-type 70-power Hidden Power Flawless Gyarados
+--function shiny(atkdef,spespc)
+--    if spespc == 0xFF then
+--        if atkdef == 0xCD then
+--            return true
+--        end
+--    end
+--    return false
+--end -- Flying-type 70-power Hidden Power Flawless Dragonair
+
 
 local state = savestate.create()
 -- botting for species

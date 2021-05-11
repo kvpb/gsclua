@@ -1,5 +1,7 @@
 --Edit parameters in this section
 local desired_tid = {12345, 00666, 31415} --TIDs you desired
+--local desired_tid = {00002} -- 00002 ETHAN
+--local desired_tid = {00003} -- Girl 00003 KRYS
 --End of parameters
 
 local tid_addr

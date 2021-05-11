@@ -46,7 +46,39 @@ function shiny(atkdef,spespc)
     end
     return false
 end
- 
+--function shiny(atkdef,spespc) --function colorhighestDV(ATKDEF, SPESPC) --function altcolorflawless
+--    if spespc == 0xAA then     -- Alt. Color Flawless: SPESPC = 0xAA & ATKDEF = 0xFA
+--        if atkdef == 0xFA then -- Alt. Color Flawless: SPESPC = 0xAA & ATKDEF = 0xFA
+--            return true
+--        end
+--    end
+--    return false
+--end
+--function shiny(atkdef,spespc) --function maxDV(ATKDEF, SPESPC) --function flawless
+--    if spespc == 0xFF then     -- Flawless: SPESPC = 0xFF & ATKDEF = 0xFF
+--        if atkdef == 0xFF then -- Flawless: SPESPC = 0xFF & ATKDEF = 0xFF
+--            return true
+--        end
+--    end
+--    return false
+--end
+--function shiny(atkdef,spespc)
+--    if spespc == 0xFF then     -- Ghost-type 70-power Hidden Power Flawless: SPESPC = 0xFF & ATKDEF = 0xDE 
+--        if atkdef == 0xDE then -- Ghost-type 70-power Hidden Power Flawless: SPESPC = 0xFF & ATKDEF = 0xDE
+--            return true
+--        end
+--    end
+--    return false
+--end
+--function shiny(atkdef,spespc)
+--    if spespc == 0xFF then     -- Water-type 70-power Hidden Power Flawless: SPESPC = 0xFF & ATKDEF = 0xED
+--        if atkdef == 0xED then -- Water-type 70-power Hidden Power Flawless: SPESPC = 0xFF & ATKDEF = 0xED
+--            return true
+--        end
+--    end
+--    return false
+--end
+
 state = savestate.create()
 while true do
     savestate.save(state)
